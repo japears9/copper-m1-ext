@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito, Source_Sans_3 } from "next/font/google";
+import { Outfit, Source_Sans_3 } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,7 +7,8 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 // Rounded geometric sans for headings, humanist sans for body (Product Bible, Section 2).
-const display = Nunito({ subsets: ["latin"], variable: "--font-display" });
+// Outfit's letters are built on circles but have crisp ends, so it reads modern, not playful.
+const display = Outfit({ subsets: ["latin"], variable: "--font-display" });
 const body = Source_Sans_3({ subsets: ["latin"], variable: "--font-body" });
 
 export const metadata: Metadata = {

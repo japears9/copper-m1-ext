@@ -21,7 +21,7 @@ export function PlusPricing() {
   return (
     <section id="plus" data-testid="plus-pricing">
       <div className="mx-auto max-w-5xl px-4 py-16 md:py-24">
-        <h2 className="font-heading text-3xl font-bold sm:text-4xl">
+        <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
           Copper Plus
         </h2>
         <p className="text-muted-foreground mt-3 text-lg">
@@ -41,21 +41,23 @@ export function PlusPricing() {
               >
                 <CardHeader className="gap-3">
                   <div className="flex items-center justify-between gap-4">
-                    <CardTitle className="font-heading text-2xl font-bold">
+                    <CardTitle className="font-heading text-2xl font-semibold tracking-tight">
                       {plan.name}
                     </CardTitle>
                     {plus && <Badge>Refine your answers</Badge>}
                   </div>
                   {plan.monthlyUsd === 0 && plan.annualUsd === 0 ? (
                     <div>
-                      <p className="text-4xl font-bold">{formatUsd(0)}</p>
+                      <p className="font-heading text-4xl font-semibold tracking-tight">
+                        {formatUsd(0)}
+                      </p>
                       <p className="text-muted-foreground mt-1 text-base">
                         Included with every device
                       </p>
                     </div>
                   ) : (
                     <div>
-                      <p className="text-4xl font-bold">
+                      <p className="font-heading text-4xl font-semibold tracking-tight">
                         <span className={cn(plus && "text-primary")}>
                           {formatUsd(plan.monthlyUsd)}
                         </span>

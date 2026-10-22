@@ -132,7 +132,7 @@ export function ProductQuiz({
     >
       <DialogTrigger asChild>
         <Button variant="outline" size="lg" className="h-11 px-6 text-base">
-          Find my Copper
+          Which product is right for me?
         </Button>
       </DialogTrigger>
       <DialogContent
@@ -150,7 +150,7 @@ export function ProductQuiz({
               <p className="text-muted-foreground text-sm">
                 Question {step + 1} of {steps.length}
               </p>
-              <DialogTitle className="text-xl leading-snug font-bold">
+              <DialogTitle className="text-xl leading-snug font-semibold tracking-tight">
                 {steps[step].title}
               </DialogTitle>
               <DialogDescription className="sr-only">
@@ -186,7 +186,7 @@ export function ProductQuiz({
           <>
             <DialogHeader className="gap-2">
               <p className="text-muted-foreground text-sm">Your match</p>
-              <DialogTitle className="text-xl leading-snug font-bold">
+              <DialogTitle className="text-xl leading-snug font-semibold tracking-tight">
                 {result!.products.map((p) => p.name).join(" and ")}
               </DialogTitle>
               <DialogDescription>
@@ -203,7 +203,7 @@ export function ProductQuiz({
                 >
                   <div className="flex items-baseline justify-between gap-4">
                     <span className="font-semibold">{product.name}</span>
-                    <span className="text-primary font-bold">
+                    <span className="text-primary font-semibold">
                       {formatUsd(product.priceUsd)}
                     </span>
                   </div>

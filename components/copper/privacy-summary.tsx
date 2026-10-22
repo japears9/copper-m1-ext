@@ -11,7 +11,7 @@ export function PrivacySummary() {
       className="bg-accent/10"
     >
       <div className="mx-auto max-w-5xl px-4 py-16 md:py-24">
-        <h2 className="font-heading text-3xl font-bold sm:text-4xl">
+        <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
           Your privacy, in plain words
         </h2>
         <p className="text-muted-foreground mt-3 text-lg">

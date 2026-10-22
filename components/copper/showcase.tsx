@@ -15,7 +15,7 @@ export function Showcase() {
   return (
     <section id="showcase" data-testid="showcase" className="bg-secondary">
       <div className="mx-auto max-w-5xl px-4 py-16 md:py-24">
-        <h2 className="font-heading text-3xl font-bold sm:text-4xl">
+        <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
           Made for Arizona life
         </h2>
         <div className="mt-10 flex flex-col gap-12 md:gap-16">

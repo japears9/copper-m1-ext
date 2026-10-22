@@ -13,7 +13,7 @@ export function Hero() {
     <section id="top" data-testid="hero" className="bg-secondary">
       <div className="mx-auto grid max-w-5xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-24">
         <div className="flex flex-col items-start gap-6">
-          <h1 className="font-heading text-4xl leading-tight font-bold text-balance sm:text-5xl">
+          <h1 className="font-heading text-4xl leading-[1.1] font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">
             Practical AI for Arizona homes, desks and classrooms.
           </h1>
           <p className="text-muted-foreground text-xl">

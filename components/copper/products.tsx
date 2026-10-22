@@ -24,7 +24,7 @@ export function Products() {
   return (
     <section id="products" data-testid="products">
       <div className="mx-auto max-w-5xl px-4 py-16 md:py-24">
-        <h2 className="font-heading text-3xl font-bold sm:text-4xl">
+        <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
           Meet the products
         </h2>
         <div className="mt-10 grid gap-8 md:grid-cols-2">
@@ -61,10 +61,10 @@ export function Products() {
 
               <CardHeader className="gap-2">
                 <div className="flex items-baseline justify-between gap-4">
-                  <CardTitle className="font-heading text-2xl font-bold">
+                  <CardTitle className="font-heading text-2xl font-semibold tracking-tight">
                     {product.name}
                   </CardTitle>
-                  <p className="text-primary text-2xl font-bold">
+                  <p className="font-heading text-primary text-2xl font-semibold tracking-tight">
                     {formatUsd(product.priceUsd)}
                   </p>
                 </div>
