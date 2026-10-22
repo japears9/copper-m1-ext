@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { CUTOUT_SIZE, cutoutAlt } from "@/components/copper/product-images";
-import { getProducts } from "@/lib/copper/catalog";
+import { ProductQuiz } from "@/components/copper/product-quiz";
+import { getPlans, getProducts } from "@/lib/copper/catalog";
 
 export function Hero() {
   const products = getProducts();
@@ -18,9 +19,12 @@ export function Hero() {
           <p className="text-muted-foreground text-xl">
             From raw ideas to refined answers.
           </p>
-          <Button asChild size="lg" className="h-11 px-6 text-base">
-            <a href="#products">See products</a>
-          </Button>
+          <div className="flex flex-wrap gap-3">
+            <Button asChild size="lg" className="h-11 px-6 text-base">
+              <a href="#products">See products</a>
+            </Button>
+            <ProductQuiz products={products} plans={getPlans()} />
+          </div>
         </div>
 
         <div className="relative mx-auto w-full max-w-md">
